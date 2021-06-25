@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <body>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Url to Video Player v1.0</title>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/demo.css" />
+   </head>
+<p>Url to Video Player v1.0</p>
+<form action="javascript:loadVideo()">
+    <input type="url" id="source" value=""/>video url
+    <input type="url" id="poster" value="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg"/>poster url
+    <button>Play Video</button>
+</form>
+<video id="vid3" controls src=""></video>
+
+<script>
+function loadVideo() {
+    var vid = document.getElementById('vid3');
+    vid.src = document.getElementById('source').value;
+    vid.poster = document.getElementById('poster').value;
+}
+</script>
+</body>
+<p></p>
+<a href="LICENSE.md">LICENSE.md</a>
+</html>
